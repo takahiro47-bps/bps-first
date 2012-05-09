@@ -56,6 +56,12 @@ footer, header, hgroup, menu, nav, section {
 
 /* =Global
 ----------------------------------------------- */
+a {
+	color: #0D64C3;
+}
+p, span {
+	text-align: justify !important;
+}
 .h1img {
 	text-indent: -9999px;
 	margin: 0;
@@ -85,7 +91,63 @@ body {
 				height: 135px;
 				margin: 0 auto;
 				background: transparent url(./img/header.jpg) no-repeat;
+				position: relative;
 			}
+				#navlink {
+					position: absolute;
+					top: 30px; left: 30px;
+					width: 250px; height: 100px;
+				}
+				#navlink:hover {
+					cursor: pointer;
+				}
+				
+				nav#navbar {
+					position: absolute;
+					top: 65px; left: 294px;
+					width: 676px; height: 44px;
+				}
+					nav#navbar li {
+						list-style: none;
+						float: left;
+						width: 135px; height: 44px;
+						background-image: url(img/navbar.png);
+						background-repeat: no-repeat;
+						text-indent: -99999px;
+					}
+					nav#navbar li:hover {
+						cursor: pointer;
+					}
+					li#navbar01 {
+						background-position: 0 0;
+					}
+					li#navbar01:hover {
+						background-position: 0 -44px !important;
+					}
+					li#navbar02 {
+						background-position: -135px 0;
+					}
+					li#navbar02:hover {
+						background-position: -135px -44px !important;
+					}
+					li#navbar03 {
+						background-position: -270px 0;
+					}
+					li#navbar03:hover {
+						background-position: -270px -44px !important;
+					}
+					li#navbar04 {
+						background-position: -405px 0;
+					}
+					li#navbar04:hover {
+						background-position: -405px -44px !important;
+					}
+					li#navbar05 {
+						background-position: -540px 0;
+					}
+					li#navbar05:hover {
+						background-position: -539px -44px !important;
+					}
 		article#main {
 			
 		}
@@ -119,6 +181,30 @@ body {
 								height: 347px;
 								background: transparent url(./img/employForm_info.jpg) repeat-y;
 							}
+								#buttom_more {
+									display: block;
+									position: absolute;
+									bottom: 30px; left: 20px;
+									width: 175px; height: 16px;
+									background: url(img/button_more.gif) no-repeat;
+									cursor: pointer;
+								}
+								#buttom_more:hover {
+									cursor: pointer;
+								}
+									#buttom_more img:hover {
+										cursor: pointer;
+									}
+								#buttom_enter {
+									display: block;
+									position: absolute;
+									bottom: 20px; right: 20px;
+									width: 257px; height: 46px;
+									border: 0px;
+									background: url(img/button_enter.gif) no-repeat;
+									cursor: pointer;
+								}
+								
 								.emp {
 									display: block;
 									position: absolute;
@@ -194,6 +280,7 @@ body {
 							background: transparent url(./img/employForm_footer.jpg) no-repeat scroll bottom right;
 						}
 						#about-inner {
+							padding: 0 0 30px 0;
 							width: 940px;
 							min-height: 1000px;
 							background: url(./img/about_bg.jpg) repeat-y scroll 0 0;
@@ -232,14 +319,218 @@ body {
 								margin: 0 auto;
 							}
 								#about-service h1 {
+									margin: 15px 30px 15px 30px;
 									width: 232px;
 									height: 35px;
-									background: url(./img/about_service.jpg) no-repeat scroll 0 0;
+									background: url(img/about_service.jpg) no-repeat scroll 0 0;
 								}
-								
-								
-								
-								
-								
-								
-								
+									.services {
+										margin: 0 30px 10px 30px;
+										padding: 20px;
+										background: #fff;
+										border: 1px solid #E1E1CF;
+									}
+										.services_l {
+											float: left;
+										}
+											.services_l p {
+												margin: 20px 0;
+												width: 610px;
+											}
+										.services_r {
+											float: right;
+										}
+				#secondInner {
+					margin: 0 0 8px 0;
+				}
+						#secondTitle img.title {
+							margin: 15px 0;
+						}
+							ul.tabmenu {
+								list-style: none;
+							}
+								#entrypost {
+									margin: 20px 0;
+								}
+									.entrytab {
+										float: left;
+									}
+										ul.tabmenu {
+											width: 585px;
+										}
+											ul.tabmenu li {
+												float: left;
+												width: 110px; height: 50px;
+												text-indent: -99999px;
+												margin: 0 7px 0 0;
+												position: relative;
+												background-repeat: no-repeat;
+												background-position: left top;
+											}
+											ul.tabmenu li:hover {
+												cursor: pointer;
+											}
+											ul.tabmenu li:before {
+												content:'';
+												width: 7px; height: 1px;
+												left: -7px; bottom: 0;
+												position: absolute;
+												z-index: 2;
+												background: #ccc;
+											}
+												ul.tabmenu li#tab01 {
+													background: url(img/tab_01.gif) left bottom;
+												}
+												ul.tabmenu li#tab01:before {
+													height: 0;
+												}
+												ul.tabmenu li#tab02 {
+													background: url(img/tab_02.gif);
+												}
+												ul.tabmenu li#tab03 {
+													background: url(img/tab_03.gif);
+												}
+												ul.tabmenu li#tab04 {
+													background: url(img/tab_04.gif);
+												}
+												ul.tabmenu li#tab05 {
+													background: url(img/tab_05.gif);
+												}
+											.tabcontent {
+												float: left;
+												width: 580px;
+											}
+												.tabTable {
+													margin: 20px 0;
+												}
+													.tabTable tr {
+													}
+														.tabTable th {
+															vertical-align: middle;
+															width: 150px;
+															color: #0ABAA3;
+															font-size: 12px;
+															font-weight: bold;
+															line-height: 20px;
+															text-align: left;
+															border-bottom: 1px dashed #ddd;
+														}
+														.tabTable td {
+															font-size: 12px;
+															line-height: 18px;
+															padding: 5px 0;
+															border-bottom: 1px dashed #ddd;
+														}
+															.tabTable table td {
+																border: none;
+																padding: 0;
+															}
+									.entrymenu {
+										float: right;
+										width: 342px;
+									}
+										dl.entrymenuInner {
+											border-right: 1px solid #D0D0D0;
+											border-left: 1px solid #D0D0D0;
+											position: relative;
+										}
+										dl.entrymenuInner:before {
+											content:'';
+											width: 1px; height: 5px;
+											left: -1px; top: -5px;
+											position: absolute;
+											z-index: 2;
+											background: #ccc;
+										}
+										dl.entrymenuInner:after {
+											content:'';
+											width: 1px; height: 5px;
+											right: -1px; top: -5px;
+											position: absolute;
+											z-index: 2;
+											background: #ccc;
+										}
+											dl.entrymenuInner dt,
+											dl.entrymenuInner dd {
+												padding: 0 12px;
+											}
+											dl.entrymenuInner dt {
+												color: #00A48F;
+												font-weight: bold;
+												padding-top: 12px;
+											}
+											dl.entrymenuInner dd {
+												border-bottom: 1px solid #D0D0D0;
+												padding-bottom: 12px;
+											}
+							ul.qa_list {
+								border: 1px solid #E7E7E7;
+								border-bottom: none;
+							}
+								ul.qa_list li {
+									border-bottom: 1px solid #E7E7E7;
+									list-style: none;
+									padding: 16px 20px 0 20px;
+								}
+									p.question {
+										background: url(img/question_q.jpg) no-repeat scroll left top transparent;
+										line-height: 28px;
+										padding-left: 38px;
+									}
+									p.answer {
+										background: url(img/question_a.jpg) no-repeat scroll left top transparent;
+										line-height: 28px;
+										padding-left: 38px;
+									}
+									ul.qa_list li p {
+										padding: 0 0 0 40px;
+										margin: 0 0 16px 0;
+									}
+		footer {
+			width: 100%;
+			text-align: left;
+		}
+			#footerLink {
+				width: 940px;
+				margin: 24px auto 12px;
+				text-align: left;
+				position: relative;
+			}
+				#pagetop {
+					width: 117px; height: 54px;
+					top: 45px; left: 830px;
+					background: url(img/icon_pagetop.gif) no-repeat;
+					position: absolute;
+					z-index: 1000;
+				}
+			footer a, footer span {
+				color: #606060;
+				text-decoration: none;
+				font-size: 10px;
+				font-weight: normal;
+			}
+			
+			footer ul#footerLinks li {
+				display:table-cell;
+				vertical-align:bottom;
+			}
+			* html footer ul#footerLinks li {/* IE 6 */
+				display:inline;
+				zoom:1;
+			}
+			*:first-child+html footer ul#footerLinks li {/* IE 7 */
+				display:inline;
+				zoom:1;
+			}
+				footer ul#footerLinks li span {
+					padding-right: 4px;
+				}
+			
+			#footerInfo {
+				background: #f6f6f6;
+				height: 200px;
+			}
+				#footerInfoInner {
+					width: 940px;
+					margin: 0 auto 12px;
+				}

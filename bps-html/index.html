@@ -25,13 +25,37 @@
 		<!-- js -->
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
 		<script type="text/javascript"  src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="./js/jquery.user.js"></script>
+		<script type="text/javascript" src="./js/jquery.bgpos.js"></script>
 		
 	</head>
 	<body id="home" class="">
 		<div id="wrap">
 			<header id="header">
 				<div id="headerInner">
+					<a href="#">
+						<div id="navlink"></div>
+					</a>
 					
+					<nav id="navbar">
+						<ul>
+							<li id="navbar01" class="navbaritem">
+								<a href="#">トップページ</a>
+							</li>
+							<li id="navbar02" class="navbaritem">
+								<a href="#">実績</a>
+							</li>
+							<li id="navbar03" class="navbaritem">
+								<a href="#">サービス紹介</a>
+							</li>
+							<li id="navbar04" class="navbaritem">
+								<a href="#">会社案内</a>
+							</li>
+							<li id="navbar05" class="navbaritem">
+								<a href="#">お問い合わせ</a>
+							</li>
+						</ul>
+					</nav>
 				</div><!-- #headerInner -->
 			</header><!-- #header -->
 			
@@ -65,7 +89,11 @@
 									</div><!-- #employFormInnerAdd -->
 									
 									<div id="employFormInnerSend">
+										<div id="buttom_more">
+											<img src="img/button_more.gif" />
+										</div>
 										
+										<input type="submit" value="" onClick="void(this.form.submit());return false" id="buttom_enter" />
 									</div><!-- #employFormInneSend -->
 									
 								</form>
@@ -90,13 +118,401 @@
 							</div>
 							<div id="about-service">
 								<h1 class="h1img">自社サービス一例</h1>
-								<p></p>
+								
+								<div class="services">
+									<div class="left services_l">
+										<img src="./img/service01.gif" />
+										<p>
+										コラマネとは、慶応大学SFCと弊社で共同プロデュースしている産学連携プロジェクト型授業です。企業から招致したプロジェクトマネージャーと優秀な学生が、 クライアント付きのプロジェクトを半年間行います。
+										</p>
+										<a href="#">
+											Visit web site
+										</a>
+									</div>
+									<div class="right services_r">
+										<img src="./img/service01thum.jpg" />
+									</div>
+									<div style="clear:both;"></div>
+								</div>
+								
+								<div class="services">
+									<div class="left services_l">
+										<img src="./img/service02.gif" />
+										<p>
+										BPS の第1弾サービスとしてMANGA REBORNを2011年6月1日にリリースしました。世界中の漫画・コミックを世界中の人が母国語で読める電子出版サイトです。MANGA REBORNでは、プロの漫画翻訳家による高品質な多言語化、Android/PC/iPhone など様々な閲覧端末への対応，ペイパービュー・UNLOCK システムなどによる自由な価格・配信方法の選択など、漫画を世界に配信するにあたり、多くのサポート機能を提供しています。読み手も、作り手も、応援したい人も、出版社も、関わる全ての人が、人種・言語・所得を問わず、幸せになることを目指したプロジェクトです。このように、BPS が創るサービスの根底には、関わる全ての人が嬉しくなるように、という願いが込められていて、それはMANGA REBORNでも採り入れられています。
+										</p>
+										<a href="#">
+											Visit web site
+										</a>
+									</div>
+									<div class="right services_r">
+										<img src="./img/service02thum.jpg" />
+									</div>
+									<div style="clear:both;"></div>
+								</div>
+								
+								<div class="services">
+									<div class="left services_l">
+										<img src="./img/service03.gif" />
+										<p>
+										e BOOK GUARDIANはマンガに特価した電子書籍ソリューションです。<br />
+マンガを電子化するためコンテンツ制作ツールや、快適な閲覧を追求したビューワ、電子化サービスや翻訳まで幅広いソリューションをご提供します。
+										</p>
+										<a href="#">
+											Visit web site
+										</a>
+									</div>
+									<div class="right services_r">
+										<img src="./img/service03thum.jpg" />
+									</div>
+									<div style="clear:both;"></div>
+								</div>
+								
+								<div class="services">
+									<div class="left services_l">
+										<img src="./img/service04.gif" />
+										<p>
+										TechRachoは最新の技術トレンド＆ITに関するアイデアマガジンです。技術・ガジェット・サービスなどをエンジニア視点でまとめてます。
+										</p>
+										<a href="#">
+											Visit web site
+										</a>
+									</div>
+									<div class="right services_r">
+										<img src="./img/service04thum.jpg" />
+									</div>
+									<div style="clear:both;"></div>
+								</div>
+								
+								
 							</div>
 						</div>
 					</div><!-- #firstInner -->
+					
+					<div id="secondInner">
+						<div id="secondTitle" style="margin-bottom:8px;">
+							<img src="./img/title_syokusyu.gif" class="title" />
+							<p>
+								質問などはお気軽に<a href="#">お問い合わせ</a>ください。心よりお待ちしております。
+							</p>
+							
+							<div id="entrypost">
+								<div class="entrytab">
+									<ul class="tabmenu">
+										<li id="tab01" class="menutabitem">Webエンジニア</li>
+										<li id="tab02" class="menutabitem">スマホエンジニア</li>
+										<li id="tab03" class="menutabitem">サーバエンジニア</li>
+										<li id="tab04" class="menutabitem">Webマーケッタ</li>
+										<li id="tab05" class="menutabitem">デザイナ</li>
+									</ul>
+									
+									<div id="tabcontent01" class="tabcontent">
+										<table class="tabTable">
+											<tbody>
+												<tr>
+													<th>仕事内容</th>
+													<td>PC/Mobile向けウェブサイト開発<br />上記を統合したDB・システムの設計</td>
+												</tr>
+												<tr>
+													<th>応募資格</th>
+													<td>CakePHPまたはsymfonyを使ったWeb開発経験あり（趣味でもOK） / Ruby on Railsを使ったWeb開発経験あり（趣味でもOK）、HTML/CSS</td>
+												</tr>
+												<tr>
+													<th>望ましいスキル</th>
+													<td>
+														<table>
+															<tbody>
+																<tr>
+																	<td>Cでの開発経験</td>
+																	<td>CakePHPでの開発経験</td>
+																</tr>
+																<tr>
+																	<td>Ruby on Railsでの開発経験</td>
+																	<td>日本語以外の言語をはなせること</td>
+																</tr>
+																<tr>
+																	<td>Linuxの基本操作</td>
+																	<td>サーバの運用経験</td>
+																</tr>
+																<tr>
+																	<td>DB設計経験</td>
+																	<td>Eclipseを使った開発経験</td>
+																</tr>
+																<tr>
+																	<td>基本的なJavaScriptを使った開発経験</td>
+																	<td>jQueryを使った開発経験</td>
+																</tr>
+																<tr>
+																	<td>Microsoft Officeを使った文章作成</td>
+																	<td>Photoshopの使用経験</td>
+																</tr>
+																<tr>
+																	<td>スマートフォン向けのWebサイトの構築経験</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									
+									<div id="tabcontent02" class="tabcontent">
+										<table class="tabTable">
+											<tbody>
+												<tr>
+													<th>仕事内容</th>
+													<td>Android向けアプリケーションの実装</td>
+												</tr>
+												<tr>
+													<th>応募資格</th>
+													<td>Android開発経験あり(趣味でもOK)</td>
+												</tr>
+												<tr>
+													<th>望ましいスキル</th>
+													<td>
+														<table>
+															<tbody>
+																<tr>
+																	<td>Cでの開発経験</td><td>iPhoneアプリ開発経験</td>
+																</tr>
+																<tr>
+																	<td>Windows Phone 7での開発経験</td>
+																	<td>Windowsアプリ(C/WinAPI)での開発経験</td>
+																</tr>
+																<tr>
+																	<td>Windowsアプリ(C#/.NET Framework)での開発経験</td>
+																	<td>組み込みアプリ開発経験</td>
+																</tr>
+																<tr>
+																	<td>日本語以外の言語を話せること</td>
+																	<td>Webシステムの開発経験</td>
+																</tr>
+																<tr>
+																	<td>SQLの知識</td>
+																	<td>Linuxの基本操作</td>
+																</tr>
+																<tr>
+																	<td>OSの基礎知識</td>
+																	<td>Microsoft Officeを使った文章作成</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									
+									<div id="tabcontent03" class="tabcontent">
+										<table class="tabTable">
+											<tbody>
+												<tr>
+													<th>仕事内容</th>
+													<td>サーバメンテナンスや障害対応<br />開発インフラの整備と向上</td>
+												</tr>
+												<tr>
+													<th>応募資格</th>
+													<td>企業・大学などで、複数台のUNIX系システムの実用運用経験あり</td>
+												</tr>
+												<tr>
+													<th>望ましいスキル</th>
+													<td>
+														<table>
+															<tbody>
+																<tr>
+																	<td>複数台構成のWebシステム実運用経験</td>
+																	<td>Cでの開発経験</td>
+																</tr>
+																<tr>
+																	<td>Webシステムの開発経験</td>
+																	<td>CakePHPでの開発経験</td>
+																</tr>
+																<tr>
+																	<td>Ruby on Railsでの開発経験</td>
+																	<td>日本語以外の言語を話せること</td>
+																</tr>
+																<tr>
+																	<td>DB設計経験</td>
+																	<td>Eclipseを使った開発経験</td>
+																</tr>
+																<tr>
+																	<td>Microsoft Officeを使った文章作成</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									
+									<div id="tabcontent04" class="tabcontent">
+										<table class="tabTable">
+											<tbody>
+												<tr>
+													<th>仕事内容</th>
+													<td>検索エンジンマーケティング<br />メディア企画、市場分析、販売促進、販売戦略、運営</td>
+												</tr>
+												<tr>
+													<th>応募資格</th>
+													<td>明るく人とコミュニケーションをとるのが好きな方</td>
+												</tr>
+												<tr>
+													<th>望ましいスキル</th>
+													<td>応募する職種で2年以上の実務経験があること</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									
+									<div id="tabcontent05" class="tabcontent">
+										<table class="tabTable">
+											<tbody>
+												<tr>
+													<th>仕事内容</th>
+													<td>Webサイトやアプリ、弊社紙媒体のデザインなど</td>
+												</tr>
+												<tr>
+													<th>応募資格</th>
+													<td>良いものを作ることに熱意を持てる方</td>
+												</tr>
+												<tr>
+													<th>望ましいスキル</th>
+													<td>
+														<table>
+															<tbody>
+																<tr>
+																	<td>Cでの開発経験</td>
+																	<td>Illustrator/Photoshopの操作</td>
+																</tr>
+																<tr>
+																	<td>HTML/CSSコーディング</td>
+																	<td>JavaScriptを使ったWeb制作</td>
+																</tr>
+																<tr>
+																	<td>Flashオーサリング</td>
+																	<td>印刷に関する知識</td>
+																</tr>
+															</tbody>
+														</table>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								
+								<div class="entrymenu">
+									<img src="img/tab_joken.gif" />
+									<dl class="entrymenuInner">
+										<dt>雇用形態</dt>
+										<dd>正社員、契約社員、アルバイト</dd>
+										<dt>勤務地</dt>
+										<dd>東京都新宿区新宿2-3-12　新宿光和ビル2F</dd>
+										<dt>勤務時間</dt>
+										<dd>10時～19時</dd>
+										<dt>待遇</dt>
+										<dd>交通費全額支給、健康保険、厚生年金、雇用保険、定期健康診断</dd>
+										<dt>休日・休暇</dt>
+										<dd>週休2日（土・日）、祝祭日、年末年始休業、有給休暇有（入社6ヶ月以降）</dd>
+										<dt>年齢制限</dt>
+										<dd>40歳までです。</dd>
+										<dt>その他</dt>
+										<dd>仕事内容のほかに広報活動、プロジェクトの管理業務、社内インフラの維持などの社内業務を、適正に合わせて担当していただきます。	掃除等も全社員参加の当番制で行います。</dd>
+										<dt>給与(月給)</dt>
+										<dd>200,000円～800,000円</dd>
+										<dt>給与(時給)</dt>
+										<dd>1,200円～5,000円</dd>
+									</dl>
+								</div>
+									
+								</div>
+								
+								<div style="clear:both;"></div>
+							</div>
+							
+						</div>
+						
+						<div id="secondTitle" style="margin-bottom:24px;">
+							<img src="./img/title_entry.gif" class="title" />
+							<p>
+								本ページ上部のフォームより必要項目を記入のうえご応募ください。
+							</p>
+						</div>
+						
+						<div id="secondTitle">
+							<img src="./img/title_question.gif" class="title" />
+						</div>
+						
+						<ul class="qa_list">
+							<li>
+								<p class="question">会社には何人ぐらい社員がいますか?</p>
+								<p class="answer">常駐スタッフが10名おり、臨時アルバイト・インターン・派遣の方などが5～10名程度一緒にお仕事をしています。</p>
+							</li>
+							<li>
+								<p class="question">選考にはどれくらいの期間がかかりますか？</p>
+								<p class="answer">ご応募頂いてから2週間～1ヶ月程度となっております。</p>
+							</li>
+							<li>
+								<p class="question">服装やオフィス環境など教えてださい</p>
+								<p class="answer">服装は自由です。打ち合わせなどがある場合は、スーツの場合もありますが、基本はラフな格好が多いです。オフィス内は土足禁止＆禁煙です。</p>
+							</li>
+							<li>
+								<p class="question">エンジニアの働く環境を教えてください</p>
+								<p class="answer">快適に働けるよう、椅子はエルゴヒューマンチェアを使っています。モニタも24インチ以上を必要に応じて1～3枚以上用意します。
+								開発環境も最新のマシンと開発用サーバーは仮想化して使っています。現在の開発言語や利用アプリは、Linux/Apache/MySQL/PHP/Rubyですが、
+								それだけではもちろん運用できないので、shell/javascript/c/subversion/git/redmineなどなどオープンソースを活用しています。
+				 				会議や打ち合わせももちろんありますが仕事に集中できる静かな環境です。</p>
+							</li>
+							<li>
+								<p class="question">平均年齢を教えてください。</p>
+								<p class="answer">27.4歳です。</p>
+							</li>
+							<li>
+								<p class="question">平均制限はありますか</p>
+								<p class="answer">40歳までです。</p>
+							</li>
+						</ul>
+					
+					</div>
+					
 				</div><!-- #firstWrap -->
 			</article><!-- #main -->
 			
+			<footer>
+				<div id="footerLink">
+					<a href="#wrap" id="toTop">
+						<div id="pagetop"></div>
+					</a>
+					
+					<ul id="footerLinks">
+						<li>
+							<a href="#">
+								<img src="img/icon_privacy.jpg" width="59" height="63" style="padding: 0 20px 0 0; float:left;" />
+							</a>
+						</li>
+						<li>
+							<a href="#">個人情報保護方針</a>
+							<span> | </span>
+						</li>
+						<li>
+							<a href="#">個人情報の保護に関する公表事項</a>
+							<span> | </span>
+						</li>
+						<li>
+							<a href="#">サイトマップ</a>
+						</li>
+						<li style="clear:both;"></li>
+					</ul>
+				</div>
+				
+				<div id="footerInfo">
+					<div id="footerInfoInner">
+						<img src="img/icon_copyright.gif" style="padding-top: 15px;" />
+					</div>
+				</div>
+			</footer>
 		</div><!-- #wrap -->
 	</body>
 </html>
